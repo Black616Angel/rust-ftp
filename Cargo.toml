@@ -3,7 +3,7 @@ name = "ftp"
 version = "3.0.1"
 authors = ["Matt McCoy <mattnenterprise@yahoo.com>"]
 documentation = "https://docs.rs/ftp/"
-repository = "https://github.com/mattnenterprise/rust-ftp"
+repository = "https://github.com/Black616Angel/rust-ftp"
 description = "FTP client for Rust"
 readme = "README.md"
 license = "Apache-2.0/MIT"
@@ -11,7 +11,7 @@ keywords = ["ftp"]
 categories = ["network-programming"]
 
 [badges]
-travis-ci = { repository = "mattnenterprise/rust-ftp" }
+travis-ci = { repository = "Black616Angel/rust-ftp" }
 
 [lib]
 name ="ftp"
