@@ -463,7 +463,14 @@ impl FtpStream {
         let Line(_, content) = (self.read_response(status::FILE))?;
 
         match SIZE_RE.captures(&content) {
-            Some(caps) => Ok(Some(caps[1].parse().unwrap())),
+            Some(caps) => {
+			if caps.len() >= 1 {
+				Ok( Some(caps[1].parse().unwrap()))
+			} else
+			{
+				Ok(None)
+			}
+		},
             None => Ok(None)
         }
     }
